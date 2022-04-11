@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 75vh;
+    position: relative;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 451px;
+    height: 701px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow:hidden;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 105px;
+    box-shadow: 0px 15px 10px hsl(229, 75%, 87%);
+}
+.text{
+    margin: 51px;
+}
+.title{
+    margin-bottom: 29px;
+    font-size: 31px;
+    font-weight: 900;
+}
+.subtext{
+   color:  hsl(224, 23%, 55%);
+   font-size: 16px;
+   margin: 28px;
+}
+.box{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color:hsl(225, 100%, 98%);
+    height: 97px;
+    width: 357px;
+    margin-bottom: 32px;
+}
+.box-left{
+    display:flex;
+
+}
+.btitle{
+    font-weight: 900;
+}
+.btext{
+    color: hsl(224, 23%, 55%);
+}
+.box-text{
+    padding-left: 18px;
+}
+.blink{
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 700;
+}
+.pro-btn{
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    padding-top: 15px;
+    height: 51px;
+    margin-bottom: 35px;
+    width: 354px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0px 15px 10px hsl(246, 67%, 92%);
+}
+.cancel{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.hov:hover{
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.cancel:hover{
+    color: black;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 375px) {
+
+    body{
+        background-position: right 48vw bottom 40vh, left 45vw top 39vh;
+    }
+    .container{
+        margin: 71px 24px;
+        font-size: 15px;
+        width: 2px;
+    }
+
+   }
